@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { useScrollToSection } from "@/hooks/useScrollToSection";
 import { useTypingEffect } from "@/hooks/useTypingEffect";
 
+import Profil_Professionel__2_ from "@assets/Profil Professionel (2).jpg";
+
 export default function HeroSection() {
   const scrollToSection = useScrollToSection();
   const typedText = useTypingEffect("DÉVELOPPEUR WEB ET MOBILE", 100);
@@ -59,7 +61,6 @@ export default function HeroSection() {
           className="absolute bottom-1/3 right-1/4 w-1 h-1 bg-bright-cyan rounded-full"
         />
       </div>
-
       <div className="text-center z-10 px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -69,7 +70,7 @@ export default function HeroSection() {
         >
           <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-bright-cyan pulse-glow">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400"
+              src={Profil_Professionel__2_}
               alt="Ibrahima Kebe"
               className="w-full h-full object-cover"
             />
