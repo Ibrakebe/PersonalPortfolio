@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
   --background: hsl(240, 10%, 3.9%);
@@ -164,25 +164,25 @@
   }
 
   .pulse-glow {
-    animation: pulse-glow 2s ease-in-out infinite alternate;
+    animation: pulse-glow 3s ease-in-out infinite alternate;
   }
 
   @keyframes pulse-glow {
     0% {
-      box-shadow: 0 0 5px hsl(180, 100%, 50%), 0 0 10px hsl(180, 100%, 50%), 0 0 15px hsl(180, 100%, 50%);
+      box-shadow: 0 0 3px hsl(180, 100%, 50%), 0 0 6px hsl(180, 100%, 50%), 0 0 9px hsl(180, 100%, 50%);
     }
     100% {
-      box-shadow: 0 0 10px hsl(180, 100%, 50%), 0 0 20px hsl(180, 100%, 50%), 0 0 30px hsl(180, 100%, 50%);
+      box-shadow: 0 0 6px hsl(180, 100%, 50%), 0 0 12px hsl(180, 100%, 50%), 0 0 18px hsl(180, 100%, 50%);
     }
   }
 
   .float-animation {
-    animation: float 6s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
   }
 
   @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-10px); }
   }
 
   .hologram {
@@ -208,13 +208,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 2px;
+    width: 1px;
     height: 100vh;
     background: linear-gradient(to bottom, transparent, hsl(180, 100%, 50%), transparent);
-    animation: scan 3s linear infinite;
+    animation: scan 8s linear infinite;
     pointer-events: none;
     z-index: 1000;
-    opacity: 0.3;
+    opacity: 0.1;
   }
 
   @keyframes scan {
@@ -224,12 +224,12 @@
 
   .particle {
     position: fixed;
-    width: 4px;
-    height: 4px;
+    width: 2px;
+    height: 2px;
     background: linear-gradient(45deg, hsl(180, 100%, 50%), hsl(262, 52%, 47%));
     border-radius: 50%;
     pointer-events: none;
-    animation: particle 10s linear infinite;
+    animation: particle 15s linear infinite;
     z-index: 1;
   }
 
@@ -238,8 +238,8 @@
       transform: translateY(100vh) rotate(0deg); 
       opacity: 0; 
     }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
+    20% { opacity: 0.3; }
+    80% { opacity: 0.3; }
     100% { 
       transform: translateY(-100vh) rotate(360deg); 
       opacity: 0; 

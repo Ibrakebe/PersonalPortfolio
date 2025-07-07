@@ -12,51 +12,51 @@ export default function HeroSection() {
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
           animate={{ 
-            y: [0, -20, 0],
-            opacity: [0.5, 1, 0.5]
+            y: [0, -10, 0],
+            opacity: [0.2, 0.4, 0.2]
           }}
           transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
             delay: 0
           }}
-          className="absolute top-1/4 left-1/4 w-2 h-2 bg-bright-cyan rounded-full"
+          className="absolute top-1/4 left-1/4 w-1 h-1 bg-bright-cyan rounded-full"
         />
         <motion.div
           animate={{ 
-            y: [0, -20, 0],
-            opacity: [0.5, 1, 0.5]
+            y: [0, -10, 0],
+            opacity: [0.2, 0.4, 0.2]
           }}
           transition={{
-            duration: 6,
-            repeat: Infinity,
-            delay: 1
-          }}
-          className="absolute top-1/3 right-1/3 w-3 h-3 bg-turquoise rounded-full"
-        />
-        <motion.div
-          animate={{ 
-            y: [0, -20, 0],
-            opacity: [0.5, 1, 0.5]
-          }}
-          transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
             delay: 2
           }}
-          className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-deep-purple rounded-full"
+          className="absolute top-1/3 right-1/3 w-1 h-1 bg-turquoise rounded-full"
         />
         <motion.div
           animate={{ 
-            y: [0, -20, 0],
-            opacity: [0.5, 1, 0.5]
+            y: [0, -10, 0],
+            opacity: [0.2, 0.4, 0.2]
           }}
           transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
-            delay: 3
+            delay: 4
           }}
-          className="absolute bottom-1/3 right-1/4 w-3 h-3 bg-bright-cyan rounded-full"
+          className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-deep-purple rounded-full"
+        />
+        <motion.div
+          animate={{ 
+            y: [0, -10, 0],
+            opacity: [0.2, 0.4, 0.2]
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            delay: 6
+          }}
+          className="absolute bottom-1/3 right-1/4 w-1 h-1 bg-bright-cyan rounded-full"
         />
       </div>
 

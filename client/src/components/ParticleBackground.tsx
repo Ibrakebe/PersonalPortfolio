@@ -10,8 +10,8 @@ export default function ParticleBackground() {
       const particle = document.createElement('div');
       particle.className = 'particle';
       particle.style.left = Math.random() * 100 + 'vw';
-      particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-      particle.style.opacity = (Math.random() * 0.5 + 0.2).toString();
+      particle.style.animationDuration = (Math.random() * 5 + 10) + 's';
+      particle.style.opacity = (Math.random() * 0.2 + 0.1).toString();
       
       containerRef.current.appendChild(particle);
       
@@ -19,10 +19,10 @@ export default function ParticleBackground() {
         if (containerRef.current && containerRef.current.contains(particle)) {
           containerRef.current.removeChild(particle);
         }
-      }, 5000);
+      }, 15000);
     };
 
-    const interval = setInterval(createParticle, 300);
+    const interval = setInterval(createParticle, 800);
 
     return () => {
       clearInterval(interval);

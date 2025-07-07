@@ -11,7 +11,7 @@ import ParticleBackground from "@/components/ParticleBackground";
 
 export default function PortfolioPage() {
   useEffect(() => {
-    // Add scan line effect
+    // Add subtle scan line effect
     const scanLine = document.createElement('div');
     scanLine.className = 'scan-line';
     document.body.appendChild(scanLine);
