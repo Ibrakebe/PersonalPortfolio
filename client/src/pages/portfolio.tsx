@@ -27,7 +27,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden transition-colors duration-300">
       <ParticleBackground />
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Navigation />
       <HeroSection />
       <AboutSection />
