@@ -58,6 +58,38 @@
   --radius: 0.5rem;
 }
 
+/* Light mode styles */
+:root:not(.dark) {
+  --background: hsl(0, 0%, 98%);
+  --foreground: hsl(240, 10%, 3.9%);
+  --muted: hsl(240, 4.8%, 95.9%);
+  --muted-foreground: hsl(240, 3.8%, 46.1%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(240, 10%, 3.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(240, 10%, 3.9%);
+  --border: hsl(240, 5.9%, 90%);
+  --input: hsl(240, 5.9%, 90%);
+  --primary: hsl(207, 90%, 54%);
+  --primary-foreground: hsl(0, 0%, 98%);
+  --secondary: hsl(240, 4.8%, 95.9%);
+  --secondary-foreground: hsl(240, 5.9%, 10%);
+  --accent: hsl(240, 4.8%, 95.9%);
+  --accent-foreground: hsl(240, 5.9%, 10%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(240, 5.9%, 10%);
+  --radius: 0.5rem;
+  
+  /* Light mode tech colors */
+  --deep-purple: hsl(262, 52%, 57%);
+  --bright-cyan: hsl(180, 100%, 40%);
+  --metallic-silver: hsl(0, 0%, 45%);
+  --obsidian-black: hsl(0, 0%, 15%);
+  --glacial-white: hsl(240, 10%, 3.9%);
+  --turquoise: hsl(174, 72%, 46%);
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -66,9 +98,19 @@
   body {
     @apply font-sans antialiased bg-background text-foreground;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, hsl(240, 10%, 3.9%) 0%, hsl(240, 20%, 8%) 50%, hsl(262, 52%, 47%) 100%);
     min-height: 100vh;
     overflow-x: hidden;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Dark mode background */
+  .dark body {
+    background: linear-gradient(135deg, hsl(240, 10%, 3.9%) 0%, hsl(240, 20%, 8%) 50%, hsl(262, 52%, 47%) 100%);
+  }
+
+  /* Light mode background */
+  body:not(.dark *) {
+    background: linear-gradient(135deg, hsl(0, 0%, 98%) 0%, hsl(240, 4.8%, 95.9%) 50%, hsl(262, 52%, 85%) 100%);
   }
 
   .font-orbitron {
@@ -134,6 +176,12 @@
     -webkit-backdrop-filter: blur(16px);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  /* Light mode glassmorphism */
+  body:not(.dark *) .glassmorphism {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
   }
 
   .neumorphism {

@@ -8,6 +8,7 @@ import TerminalSection from "@/components/TerminalSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import ParticleBackground from "@/components/ParticleBackground";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function PortfolioPage() {
   useEffect(() => {
@@ -24,8 +25,9 @@ export default function PortfolioPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-obsidian-black via-gray-900 to-deep-purple text-glacial-white overflow-x-hidden">
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden transition-colors duration-300">
       <ParticleBackground />
+      <ThemeToggle />
       <Navigation />
       <HeroSection />
       <AboutSection />

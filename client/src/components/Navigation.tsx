@@ -51,7 +51,7 @@ export default function Navigation() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-glacial-white hover:text-bright-cyan transition-colors duration-300 font-jetbrains"
+                  className="text-foreground hover:text-bright-cyan transition-colors duration-300 font-jetbrains"
                 >
                   {item.label}
                 </motion.button>
@@ -64,7 +64,7 @@ export default function Navigation() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsOpen(!isOpen)}
-              className="text-glacial-white hover:text-bright-cyan"
+              className="text-foreground hover:text-bright-cyan"
             >
               <i className={`fas ${isOpen ? "fa-times" : "fa-bars"} text-xl`} />
             </motion.button>
@@ -90,7 +90,7 @@ export default function Navigation() {
                 scrollToSection(item.id);
                 setIsOpen(false);
               }}
-              className="block w-full text-left px-3 py-2 text-glacial-white hover:text-bright-cyan font-jetbrains"
+              className="block w-full text-left px-3 py-2 text-foreground hover:text-bright-cyan font-jetbrains"
             >
               {item.label}
             </motion.button>

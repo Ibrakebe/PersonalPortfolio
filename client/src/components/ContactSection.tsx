@@ -195,7 +195,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-obsidian-black border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-glacial-white font-jetbrains text-sm sm:text-base"
+                  className="w-full px-4 py-3 bg-input border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-foreground font-jetbrains text-sm sm:text-base"
                 />
               </div>
               
@@ -210,7 +210,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-obsidian-black border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-glacial-white font-jetbrains text-sm sm:text-base"
+                  className="w-full px-4 py-3 bg-input border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-foreground font-jetbrains text-sm sm:text-base"
                 />
               </div>
               
@@ -225,7 +225,7 @@ export default function ContactSection() {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-obsidian-black border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-glacial-white font-jetbrains text-sm sm:text-base"
+                  className="w-full px-4 py-3 bg-input border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-foreground font-jetbrains text-sm sm:text-base"
                 />
               </div>
               
@@ -240,7 +240,7 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 bg-obsidian-black border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-glacial-white font-jetbrains resize-none text-sm sm:text-base"
+                  className="w-full px-4 py-3 bg-input border border-bright-cyan rounded-lg focus:outline-none focus:border-turquoise text-foreground font-jetbrains resize-none text-sm sm:text-base"
                 />
               </div>
               
